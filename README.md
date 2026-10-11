@@ -100,3 +100,6 @@ npx serve .
 - **Typography**: Classic serif headings (`Cinzel`) paired with legible modern sans-serif body text (`Plus Jakarta Sans`).
 - **Responsive Layout**: Fluid grids and flexbox designed for phones, tablets, laptops, and ultra-wide displays.
 - **Accessible & Robust**: Semantic HTML5 tags, high contrast ratios, responsive touch targets, and resilient image loading fallbacks.
+
+## Link to this Repo
+[https://github.com/fvelazquez9491/Whiskey_Reviews/tree/main](https://github.com/fvelazquez9491/Whiskey_Reviews/tree/main)
