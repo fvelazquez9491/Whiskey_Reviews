@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whiskey Archive | The Curated Tasting Room Journal</title>
+  <meta name="description" content="A warm, refined whiskey review blog celebrating world whiskies. Discover nine comprehensive tasting evaluations analyzing appearance, aromas, and flavors.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-link">
+        <svg class="brand-icon" viewBox="0 0 24 24">
+          <path d="M5 2h14v3c0 2.2-1.3 4.2-3.3 5.1L15 10.5V17c0 1.1.9 2 2 2h1v2H6v-2h1c1.1 0 2-.9 2-2v-6.5l-.7-.4C6.3 9.2 5 7.2 5 5V2zm2 2v1c0 1.5.9 2.8 2.2 3.5l1.8.9V17c0 .6-.4 1-1 1H9v1h6v-1h-1c-.6 0-1-.4-1-1V9.4l1.8-.9C16.1 7.8 17 6.5 17 5V4H7z"/>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-title">WHISKEY ARCHIVE</span>
+          <span class="brand-subtitle">Tasting Room Journal</span>
+        </div>
+      </a>
+
+      <button class="mobile-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" stroke-width="2" fill="none">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="#reviews" class="nav-link">Whiskey Reviews</a></li>
+          <li><a href="#intro" class="nav-link">About the Blog</a></li>
+          <li><a href="#tasting-guide" class="nav-link">Tasting Guide</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Welcoming Hero Section -->
+    <section class="hero">
+      <div class="hero-bg-accent"></div>
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="hero-tagline">
+          <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          Independent Sensory Reviews
+        </div>
+        <h1 class="hero-title">
+          Explore the Art of <span>Fine Whiskey</span>
+        </h1>
+        <p class="hero-description">
+          Step into our tasting room. From peated Islay single malts to sweet Kentucky bourbons and ethereal Japanese whiskies, explore in-depth reviews dedicated to color, smell, and taste.
+        </p>
+        <div class="hero-actions">
+          <a href="#reviews" class="btn btn-primary">
+            Explore 9 Reviews
+            <svg style="width: 18px; height: 18px; fill: currentColor;" viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+          </a>
+          <a href="#intro" class="btn btn-secondary">Our Tasting Philosophy</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brief Introduction Section -->
+    <section class="intro-section" id="intro">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-content">
+            <span class="section-label">Welcome to the Archive</span>
+            <h2>Crafted For Those Who Savor Every Drop</h2>
+            <p>
+              Whiskey Archive is a dedicated journal celebrating the craft, heritage, and sensory poetry of distilled spirits. Every whiskey in our collection is evaluated neat in a tulip-shaped Glencairn glass, observing the natural spirit without ice or chill dilution.
+            </p>
+            <p>
+              We believe a great review must go beyond simple scores. Our sensory framework evaluates each pour across three cornerstone pillars:
+            </p>
+
+            <div class="tasting-pillars">
+              <div class="pillar-item">
+                <svg class="pillar-icon" viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+                <div class="pillar-title">1. Color</div>
+                <div class="pillar-desc">Cask wood extraction, natural hues, viscosity, and clinging glass tears.</div>
+              </div>
+
+              <div class="pillar-item">
+                <svg class="pillar-icon" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-9 9c0 4.97 4.03 9 9 9s9-4.03 9-9a9 9 0 0 0-9-9zm1 14.93V19a1 1 0 0 1-2 0v-1.07A7.002 7.002 0 0 1 5.07 13H4a1 1 0 0 1 0-2h1.07A7.002 7.002 0 0 1 11 5.07V4a1 1 0 0 1 2 0v1.07A7.002 7.002 0 0 1 18.93 11H20a1 1 0 0 1 0 2h-1.07A7.002 7.002 0 0 1 13 17.93z"/></svg>
+                <div class="pillar-title">2. Smell</div>
+                <div class="pillar-desc">Primary nose, aerated bouquet, esters, peat smoke, and baking spices.</div>
+              </div>
+
+              <div class="pillar-item">
+                <svg class="pillar-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                <div class="pillar-title">3. Taste</div>
+                <div class="pillar-desc">Palate texture, mid-palate evolution, oak balance, and length of finish.</div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="intro-highlight-card">
+            <p class="quote-text">
+              "Whiskey is liquid sunshine and captured time. To drink it mindfully is to taste decades of oak forest, clean mountain spring water, and the slow heartbeat of the barrelhouse."
+            </p>
+            <div class="quote-author">
+              <div class="quote-avatar">WA</div>
+              <div class="quote-meta">
+                <h4>Whiskey Archive Cellar Master</h4>
+                <p>Curated Tasting Panel</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clearly Organized Grid of Nine Review Cards -->
+    <section class="reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Curated Selection</span>
+          <h2 class="section-title">Nine Signature Whiskey Reviews</h2>
+          <p class="section-subtitle">
+            Explore our featured flight of nine world-class bottles, spanning Scotch single malts, Kentucky bourbons, and international gems.
+          </p>
+        </div>
+
+        <!-- Filter & Search Controls -->
+        <div class="filter-bar">
+          <div class="filter-pills">
+            <button class="filter-btn active" data-filter="all">All Reviews (9)</button>
+            <button class="filter-btn" data-filter="scotch">Scotch (4)</button>
+            <button class="filter-btn" data-filter="american">American (2)</button>
+            <button class="filter-btn" data-filter="world">World Whiskeys (3)</button>
+          </div>
+
+          <div class="filter-search">
+            <svg class="search-icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            <input type="text" id="whiskeySearch" class="search-input" placeholder="Search by name, region, or note..." aria-label="Search reviews">
+          </div>
+        </div>
+
+        <!-- The 9 Review Cards Grid -->
+        <div class="reviews-grid">
+
+          <!-- Card 1: The Macallan 12 Double Cask -->
+          <article class="review-card" data-category="scotch" data-origin="Speyside, Scotland" data-tags="macallan sherry butterscotch honey single malt">
+            <div class="card-img-wrap">
+              <span class="card-badge">Speyside Scotch</span>
+              <span class="card-rating-badge">91 / 100</span>
+              <img class="card-img" src="images/macallan-12.jpg" alt="A glass and bottle of The Macallan 12 Year Old Double Cask Scotch" loading="lazy" onerror="this.onerror=null; this.src='images/placeholder.svg';">
+            </div>
+            <div class="card-body">
+              <span class="card-origin">Speyside, Scotland</span>
+              <h3 class="card-title">
+                <a href="reviews/macallan-12.html">The Macallan 12 Double Cask</a>
+              </h3>
+              <p class="card-excerpt">
+                A harmonious marriage of American and European sherry oak casks delivering candied citrus, creamy butterscotch, and warm wood spice.
+              </p>
+              <div class="card-specs">
+                <div class="spec-item">
+                  <span>ABV</span>
+                  <strong>43.0%</strong>
+                </div>
+                <div class="spec-item">
+                  <span>Cask</span>
+                  <strong>Sherry Oak</strong>
+                </div>
+                <div class="spec-item">
+                  <span>Age</span>
+                  <strong>12 Years</strong>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="reviews/macallan-12.html" class="card-link">
+                  Read Full Review
+                  <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Lagavulin 16 Year Old -->
+          <article class="review-card" data-category="scotch" data-origin="Islay, Scotland" data-tags="lagavulin islay peat smoke maritime brine single malt">
+            <div class="card-img-wrap">
+              <span class="card-badge">Islay Peated</span>
+              <span class="card-rating-badge">96 / 100</span>
+              <img class="card-img" src="images/lagavulin-16.jpg" alt="Lagavulin 16 Year Old Scotch dram in dramatic warm tasting room lighting" loading="lazy" onerror="this.onerror=null; this.src='images/placeholder.svg';">
+            </div>
+            <div class="card-body">
+              <span class="card-origin">Islay, Scotland</span>
+              <h3 class="card-title">
+                <a href="reviews/lagavulin-16.html">Lagavulin 16 Year Old</a>
+              </h3>
+              <p class="card-excerpt">
+                The definitive benchmark of southern Islay: commanding peat smoke, rich lapsang souchong tea, and briny Atlantic sea spray.
+              </p>
+              <div class="card-specs">
+                <div class="spec-item">
+                  <span>ABV</span>
+                  <strong>43.0%</strong>
+                </div>
+                <div class="spec-item">
+                  <span>Profile</span>
+                  <strong>Heavy Peat</strong>
+                </div>
+                <div class="spec-item">
+                  <span>Age</span>
+                  <strong>16 Years</strong>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="reviews/lagavulin-16.html" class="card-link">
+                  Read Full Review
+                  <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Woodford Reserve -->
+          <article class="review-card" data-category="american" data-origin="Kentucky, USA" data-tags="woodford reserve bourbon caramel vanilla oak kentucky">
+            <div class="card-img-wrap">
+              <span class="card-badge">Kentucky Bourbon</span>
+              <span class="card-rating-badge">90 / 100</span>
+              <img class="card-img" src="images/woodford-reserve.jpg" alt="Woodford Reserve Distiller's Select Bourbon poured in a rocks glass" loading="lazy" onerror="this.onerror=null; this.src='images/placeholder.svg';">
+            </div>
+            <div class="card-body">
+              <span class="card-origin">Versailles, Kentucky, USA</span>
+              <h3 class="card-title">
+                <a href="reviews/woodford-reserve.html">Woodford Reserve Bourbon</a>
+              </h3>
+              <p class="card-excerpt">
+                Kentucky's quintessential straight bourbon featuring over 200 flavor notes, from rich vanilla bean to roasted pecans and dark cocoa.
+              </p>
+              <div class="card-specs">
+                <div class="spec-item">
+                  <span>ABV</span>
+                  <strong>45.2% (90.4°)</strong>
+                </div>
+                <div class="spec-item">
+                  <span>Cask</span>
+                  <strong>Charred Oak</strong>
+                </div>
+                <div class="spec-item">
+                  <span>Style</span>
+                  <strong>Bourbon</strong>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="reviews/woodford-reserve.html" class="card-link">
+                  Read Full Review
+                  <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Redbreast 12 Year Old -->
+          <article class="review-card" data-category="world" data-origin="County Cork, Ireland" data-tags="redbreast irish pot still fruit sherry midleton">
+            <div class="card-img-wrap">
+              <span class="card-badge">Single Pot Still</span>
+              <span class="card-rating-badge">94 / 100</span>
+              <img class="card-img" src="images/redbreast-12.jpg" alt="A glass of Redbreast 12 Year Old Single Pot Still Irish Whiskey" loading="lazy" onerror="this.onerror=null; this.src='images/placeholder.svg';">
+            </div>
+            <div class="card-body">
+              <span class="card-origin">County Cork, Ireland</span>
+              <h3 class="card-title">
+                <a href="reviews/redbreast-12.html">Redbreast 12 Year Old</a>
+              </h3>
+              <p class="card-excerpt">
+                The crown jewel of Irish pot still whiskey, celebrated for its luxurious mouthfeel, succulent orchard fruits, and signature grain spice.
+              </p>
+              <div class="card-specs">
+                <div class="spec-item">
+                  <span>ABV</span>
+                  <strong>40.0%</strong>
+                </div>
+                <div class="spec-item">
+                  <span>Cask</span>
+                  <strong>Sherry &amp; Bourbon</strong>
+                </div>
+                <div class="spec-item">
+                  <span>Age</span>
+                  <strong>12 Years</strong>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="reviews/redbreast-12.html" class="card-link">
+                  Read Full Review
+                  <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Yamazaki 12 Year Old -->
+          <article class="review-card" data-category="world" data-origin="Osaka, Japan" data-tags="yamazaki suntory japanese single malt mizunara sandalwood peach">
+            <div class="card-img-wrap">
+              <span class="card-badge">Japanese Single Malt</span>
+              <span class="card-rating-badge">95 / 100</span>
+              <img class="card-img" src="images/yamazaki-12.jpg" alt="Yamazaki 12 Year Old Japanese Whisky neat in elegant glassware" loading="lazy" onerror="this.onerror=null; this.src='images/placeholder.svg';">
+            </div>
+            <div class="card-body">
+              <span class="card-origin">Osaka Prefecture, Japan</span>
+              <h3 class="card-title">
+                <a href="reviews/yamazaki-12.html">Yamazaki 12 Year Old</a>
+              </h3>
+              <p class="card-excerpt">
+                A masterclass in Japanese harmony and balance, blending exotic Mizunara oak incense, sweet persimmon, and stone fruit elegance.
+              </p>
+              <div class="card-specs">
+                <div class="spec-item">
+                  <span>ABV</span>
+                  <strong>43.0%</strong>
+                </div>
+                <div class="spec-item">
+                  <span>Cask</span>
+                  <strong>Mizunara Oak</strong>
+                </div>
+                <div class="spec-item">
+                  <span>Age</span>
+                  <strong>12 Years</strong>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="reviews/yamazaki-12.html" class="card-link">
+                  Read Full Review
+                  <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: The Balvenie 14 Caribbean Cask -->
+          <article class="review-card" data-category="scotch" data-origin="Speyside, Scotland" data-tags="balvenie caribbean rum cask speyside toffee tropical sweet">
+            <div class="card-img-wrap">
+              <span class="card-badge">Speyside Rum Finish</span>
+              <span class="card-rating-badge">92 / 100</span>
+              <img class="card-img" src="images/balvenie-14-caribbean.jpg" alt="The Balvenie 14 Caribbean Cask neat pour in a warm tasting room" loading="lazy" onerror="this.onerror=null; this.src='images/placeholder.svg';">
+            </div>
+            <div class="card-body">
+              <span class="card-origin">Dufftown, Speyside, Scotland</span>
+              <h3 class="card-title">
+                <a href="reviews/balvenie-14-caribbean.html">The Balvenie 14 Caribbean Cask</a>
+              </h3>
+              <p class="card-excerpt">
+                Traditional Speyside single malt finished in West Indian rum casks, yielding indulgent butter toffee, passion fruit, and warm sweet rum spice.
+              </p>
+              <div class="card-specs">
+                <div class="spec-item">
+                  <span>ABV</span>
+                  <strong>43.0%</strong>
+                </div>
+                <div class="spec-item">
+                  <span>Cask</span>
+                  <strong>Rum Cask Finish</strong>
+                </div>
+                <div class="spec-item">
+                  <span>Age</span>
+                  <strong>14 Years</strong>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="reviews/balvenie-14-caribbean.html" class="card-link">
+                  Read Full Review
+                  <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 7: Ardbeg 10 Year Old -->
+          <article class="review-card" data-category="scotch" data-origin="Islay, Scotland" data-tags="ardbeg islay peat smoke lemon lime espresso non-chill filtered">
+            <div class="card-img-wrap">
+              <span class="card-badge">Islay Peated</span>
+              <span class="card-rating-badge">93 / 100</span>
+              <img class="card-img" src="images/ardbeg-10.jpg" alt="A glass of Ardbeg 10 Year Old Islay Single Malt Whisky" loading="lazy" onerror="this.onerror=null; this.src='images/placeholder.svg';">
+            </div>
+            <div class="card-body">
+              <span class="card-origin">Islay, Scotland</span>
+              <h3 class="card-title">
+                <a href="reviews/ardbeg-10.html">Ardbeg 10 Year Old</a>
+              </h3>
+              <p class="card-excerpt">
+                Revered as the smokiest yet most vibrantly balanced malt on Islay, fusing intense campfire peat with zesty lemon, espresso, and black pepper.
+              </p>
+              <div class="card-specs">
+                <div class="spec-item">
+                  <span>ABV</span>
+                  <strong>46.0% (NCF)</strong>
+                </div>
+                <div class="spec-item">
+                  <span>Peat</span>
+                  <strong>50-55 PPM</strong>
+                </div>
+                <div class="spec-item">
+                  <span>Age</span>
+                  <strong>10 Years</strong>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="reviews/ardbeg-10.html" class="card-link">
+                  Read Full Review
+                  <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 8: Michter's US*1 Single Barrel Rye -->
+          <article class="review-card" data-category="american" data-origin="Kentucky, USA" data-tags="michters rye whiskey kentucky single barrel cinnamon spice cherry">
+            <div class="card-img-wrap">
+              <span class="card-badge">Straight Rye</span>
+              <span class="card-rating-badge">92 / 100</span>
+              <img class="card-img" src="images/michters-us1-rye.jpg" alt="Michter's US*1 Single Barrel Rye in a tumbler glass" loading="lazy" onerror="this.onerror=null; this.src='images/placeholder.svg';">
+            </div>
+            <div class="card-body">
+              <span class="card-origin">Louisville, Kentucky, USA</span>
+              <h3 class="card-title">
+                <a href="reviews/michters-us1-rye.html">Michter's US*1 Rye</a>
+              </h3>
+              <p class="card-excerpt">
+                Matured in toasted, fire-charred new barrels. Rich candied citrus and brandied cherries combine with bold baking spices and velvety butterscotch.
+              </p>
+              <div class="card-specs">
+                <div class="spec-item">
+                  <span>ABV</span>
+                  <strong>42.4% (84.8°)</strong>
+                </div>
+                <div class="spec-item">
+                  <span>Format</span>
+                  <strong>Single Barrel</strong>
+                </div>
+                <div class="spec-item">
+                  <span>Style</span>
+                  <strong>Straight Rye</strong>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="reviews/michters-us1-rye.html" class="card-link">
+                  Read Full Review
+                  <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 9: Highland Park 12 "Viking Honour" -->
+          <article class="review-card" data-category="scotch" data-origin="Orkney, Scotland" data-tags="highland park orkney heather honey floral peat sherry fruitcake">
+            <div class="card-img-wrap">
+              <span class="card-badge">Orkney Islands</span>
+              <span class="card-rating-badge">91 / 100</span>
+              <img class="card-img" src="images/highland-park-12.jpg" alt="Highland Park 12 Viking Honour glass poured neat in tasting room" loading="lazy" onerror="this.onerror=null; this.src='images/placeholder.svg';">
+            </div>
+            <div class="card-body">
+              <span class="card-origin">Kirkwall, Orkney, Scotland</span>
+              <h3 class="card-title">
+                <a href="reviews/highland-park-12.html">Highland Park 12</a>
+              </h3>
+              <p class="card-excerpt">
+                Forged in the windswept Orkney Islands, balancing aromatic heather peat smoke, honeyed malt, Seville orange, and rich winter fruitcake.
+              </p>
+              <div class="card-specs">
+                <div class="spec-item">
+                  <span>ABV</span>
+                  <strong>40.0%</strong>
+                </div>
+                <div class="spec-item">
+                  <span>Cask</span>
+                  <strong>Sherry Seasoned</strong>
+                </div>
+                <div class="spec-item">
+                  <span>Age</span>
+                  <strong>12 Years</strong>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="reviews/highland-park-12.html" class="card-link">
+                  Read Full Review
+                  <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Tasting Room Guide Section -->
+    <section class="intro-section" id="tasting-guide" style="background-color: var(--bg-surface-elevated);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Master Class</span>
+          <h2 class="section-title">How We Conduct A Tasting</h2>
+          <p class="section-subtitle">A simple four-step guide to uncovering the secrets inside your glass.</p>
+        </div>
+
+        <div class="tasting-pillars" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+          <div class="pillar-item">
+            <div class="pillar-title">1. Choose The Glass</div>
+            <div class="pillar-desc">Always use a tulip-shaped Glencairn glass. The tapered rim concentrates delicate volatile aromas straight to your nose.</div>
+          </div>
+          <div class="pillar-item">
+            <div class="pillar-title">2. Inspect The Color</div>
+            <div class="pillar-desc">Hold the glass against a white surface or light. Swirl gently to observe the tears (legs) that trace viscosity and alcohol density.</div>
+          </div>
+          <div class="pillar-item">
+            <div class="pillar-title">3. Nose Gently</div>
+            <div class="pillar-desc">Part your lips slightly while inhaling with one nostril at a time. This prevents ethanol burn while revealing nuanced esters.</div>
+          </div>
+          <div class="pillar-item">
+            <div class="pillar-title">4. Sip &amp; Savor</div>
+            <div class="pillar-desc">Take a small initial sip to coat your palate. On the second sip, evaluate front sweetness, mid-palate spices, and the length of the finish.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-link">
+            <span class="brand-title">WHISKEY ARCHIVE</span>
+          </a>
+          <p>An independent tasting room journal celebrating the heritage, craftsmanship, and sensory beauty of world whiskeys.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#reviews">All 9 Reviews</a></li>
+            <li><a href="#intro">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Featured Reviews</h4>
+          <ul class="footer-links">
+            <li><a href="reviews/macallan-12.html">The Macallan 12</a></li>
+            <li><a href="reviews/lagavulin-16.html">Lagavulin 16</a></li>
+            <li><a href="reviews/woodford-reserve.html">Woodford Reserve</a></li>
+            <li><a href="reviews/yamazaki-12.html">Yamazaki 12</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Tasting Guide</h4>
+          <ul class="footer-links">
+            <li><a href="#tasting-guide">Glencairn Glassware</a></li>
+            <li><a href="#tasting-guide">Color &amp; Legs Analysis</a></li>
+            <li><a href="#tasting-guide">Nosing Technique</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Whiskey Archive. All rights reserved.</p>
+        <p class="footer-disclaimer">Please enjoy responsibly. Intended strictly for readers of legal drinking age.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
